@@ -5,7 +5,7 @@
 - NodeJS versão >= 10.0
 - yarn
 
-## Intalação
+## Instalação
 
 O projeto utiliza do framework Quasar, para instalar utilize o comando abaixo:
 

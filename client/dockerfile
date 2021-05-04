@@ -1,0 +1,17 @@
+FROM node:16
+
+# Adding Framework quasar
+RUN yarn global add @quasar/cli
+
+# Create app directory
+WORKDIR /client
+
+COPY . .
+
+RUN yarn install
+
+RUN yarn global add @quasar/cli
+
+CMD quasar dev 
+
+EXPOSE 8080
