@@ -86,3 +86,5 @@ python manage.py test
 ## Arquivos de Configuração
 
 A configuração do banco de dados pode ser encontrada no arquivo `api/api/settings.py` na seção `DATABASES`.
+
+teste
