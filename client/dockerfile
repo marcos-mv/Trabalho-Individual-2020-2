@@ -1,9 +1,7 @@
 FROM node:16
 
-# Adding Framework quasar
 RUN yarn global add @quasar/cli
 
-# Create app directory
 WORKDIR /client
 
 COPY . .
