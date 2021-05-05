@@ -1,5 +1,5 @@
 # Your workflow name.
-name: Deploy to heroku.
+name: Deploy api to heroku.
 
 # Run workflow on every push to master branch.
 on:
@@ -30,7 +30,7 @@ jobs:
           
           # Heroku API key associated with provided user's email.
           # Api Key is available under your Heroku account settings.
-          heroku_api_key: 60b5db12-07b8-4762-9611-068dd1d609a7
+          heroku_api_key: ${{ secrets.HEROKU_KEY_NAME }}
           
           # Name of the heroku application to which the build is to be sent.
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
@@ -42,7 +42,7 @@ jobs:
 
           # (Optional, default: "Dockerfile")
           # Dockerfile name.
-          dockerfile_name: Dockerfile
+          dockerfile_name: api/Dockerfile
 
           # (Optional, default: "")
           # Additional options of docker build command.
