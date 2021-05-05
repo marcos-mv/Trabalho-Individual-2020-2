@@ -1,7 +1,7 @@
 FROM python:3.9
- 
-RUN pip install djangorestframework psycopg2 django-cors-headers dj-database-url
 
+RUN pip install djangorestframework psycopg2 django-cors-headers coverage
+ 
 WORKDIR /api 
 
 COPY . .

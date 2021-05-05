@@ -5,7 +5,7 @@ services:
     image: frontend:trabalhofinal
     build:
       context: client
-      dockerfile: client/Dockerfile
+      dockerfile: Dockerfile
     volumes:
       - './client:/client'
       - '/client/node_modules/'
@@ -18,7 +18,7 @@ services:
     image: backend:trabalhofinal
     build:
       context: api
-      dockerfile: api/Dockerfile
+      dockerfile: Dockerfile
     environment:
       POSTGRES_HOST: db
     volumes:
